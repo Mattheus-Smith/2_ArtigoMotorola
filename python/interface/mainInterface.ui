@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>858</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mse">
+       <property name="text">
+        <string>Imagens p/ MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mseBrisque">
+       <property name="text">
+        <string>Imagens p/ MSE e BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>790</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="FOOTER">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE_BRISQUE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE E BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>70</y>
+      <width>771</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="ITENS_0_11">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="IMG_00">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_0">
+         <item>
+          <widget class="QLabel" name="label_mse_00">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_00"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_00">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_00"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_01">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_1">
+         <item>
+          <widget class="QLabel" name="label_mse_01">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_01"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_01">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_01"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_02">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_2">
+         <item>
+          <widget class="QLabel" name="label_mse_02">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_02"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_02">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_02"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_03">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_3">
+         <item>
+          <widget class="QLabel" name="label_mse_03">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_03"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_03">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_03"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_04">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_4">
+         <item>
+          <widget class="QLabel" name="label_mse_04">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_04"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_04">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_04"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_05">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_5">
+         <item>
+          <widget class="QLabel" name="label_mse_05">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_05"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_05">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_05"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_06">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_6">
+         <item>
+          <widget class="QLabel" name="label_mse_6">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_06"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_6">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_06"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_07">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_7">
+         <item>
+          <widget class="QLabel" name="label_mse_07">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_07"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_07">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_07"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_08">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_8">
+         <item>
+          <widget class="QLabel" name="label_mse_08">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_08"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_08">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_08"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_09">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_9">
+         <item>
+          <widget class="QLabel" name="label_mse_09">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_09"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_09">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_09"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_10">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_10">
+         <item>
+          <widget class="QLabel" name="label_mse_10">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_10"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_10">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_10"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_11">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_11">
+         <item>
+          <widget class="QLabel" name="label_mse_11">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_11"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_11">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_11"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="ITENS_12_23">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="IMG_12">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_12">
+         <item>
+          <widget class="QLabel" name="label_mse_13_">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_12"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_13_">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_12"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_13">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_13">
+         <item>
+          <widget class="QLabel" name="label_mse_13">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_13"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_13">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_13"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_14">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_14">
+         <item>
+          <widget class="QLabel" name="label_mse_14">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_14"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_14">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_14"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_15">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_15">
+         <item>
+          <widget class="QLabel" name="label_mse_15">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_15"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_15">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_15"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_16">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_16">
+         <item>
+          <widget class="QLabel" name="label_mse_16">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_16"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_16">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_16"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_17">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_17">
+         <item>
+          <widget class="QLabel" name="label_mse_17">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_17"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_17">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_17"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_18">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_18">
+         <item>
+          <widget class="QLabel" name="label_mse_18">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_18"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_18">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_18"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_19">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_19">
+         <item>
+          <widget class="QLabel" name="label_mse_19">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_19"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_19">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_19"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_200">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_20">
+         <item>
+          <widget class="QLabel" name="label_mse_200">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_200"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_200">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_20"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_21">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_21">
+         <item>
+          <widget class="QLabel" name="label_mse_21">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_21"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_21">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_21"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_22">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_22">
+         <item>
+          <widget class="QLabel" name="label_mse_22">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_22"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_22">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_22"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="IMG_23">
+         <property name="text">
+          <string>IMG0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM00_23">
+         <item>
+          <widget class="QLabel" name="label_mse_23">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_23"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_brisque_23">
+           <property name="text">
+            <string>BRISQUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRISQUE_23"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

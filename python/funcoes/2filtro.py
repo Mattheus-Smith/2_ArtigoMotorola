@@ -6,23 +6,21 @@ import sys
 from absl import app, flags, logging
 from absl.flags import FLAGS
 
-from correcaoGamma import correcaoGamma
-from funcionCLAHE import equalizeCLAHE
-from funcionEqualize import functionEqualization
+from funcoesExtras.correcaoGamma import correcaoGamma
+from funcoesExtras.funcionCLAHE import equalizeCLAHE
+from funcoesExtras.funcionEqualize import functionEqualization
 #from funcionLinear import *
 #from funcionLinearPorParte import *
-from funcionHDR import funcionHDR
-from funcionQuadrada import funcionQuadrada
-from funcionSquare import funcionSquare
+from funcoesExtras.funcionHDR import funcionHDR
+from funcoesExtras.funcionQuadrada import funcionQuadrada
+from funcoesExtras.funcionSquare import funcionSquare
 
 
 flags.DEFINE_string('pc', "1", 'identifiy wich pc')
 
 def main(_args):
 
-    img = cv2.imread("./../1imagensEntrada/31.jpg")
-    #img = cv2.imread("./../caso29/2015_06346.jpg")
-    # img = cv2.imread("./../novosTestes/2015_06365.jpg")
+    img = cv2.imread("./../caso30/30.jpg")
     i = 10
 
     # equalize CLAHE
@@ -109,10 +107,10 @@ def main(_args):
 
     # gamma -> equalize CLAHE
     elif(i == 10):
-        parametroGamma = 0.8
+        parametroGamma = 0.7
         out_gamma = correcaoGamma(img, parametroGamma)
 
-        parametroCLAHE = 2
+        parametroCLAHE = 3
         CLAHE_matriz = 8
         out_clahe = equalizeCLAHE(out_gamma, parametroCLAHE, CLAHE_matriz)
 

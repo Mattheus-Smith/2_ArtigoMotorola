@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mse">
+       <property name="text">
+        <string>Imagens p/ MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mseBrisque">
+       <property name="text">
+        <string>Imagens p/ MSE e BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>781</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>25</number>
+     </property>
+     <property name="rightMargin">
+      <number>25</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="ITENS01_11">
+       <item>
+        <layout class="QHBoxLayout" name="ITEM01">
+         <item>
+          <widget class="QLabel" name="IMG_0">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_0"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_0"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM02">
+         <item>
+          <widget class="QLabel" name="IMG_1">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_2">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_1"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_2">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_1"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM03">
+         <item>
+          <widget class="QLabel" name="IMG_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_3">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_3">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM04">
+         <item>
+          <widget class="QLabel" name="IMG_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_4">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_3"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_4">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_3"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM05">
+         <item>
+          <widget class="QLabel" name="IMG_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_5">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_4"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_5">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_4"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM06">
+         <item>
+          <widget class="QLabel" name="IMG_5">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_6">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_5"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_6">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_5"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM07">
+         <item>
+          <widget class="QLabel" name="IMG_6">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_7">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_6"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_7">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_6"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM08">
+         <item>
+          <widget class="QLabel" name="IMG_7">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_8">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_7"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_8">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_7"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM09">
+         <item>
+          <widget class="QLabel" name="IMG_8">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_9">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_8"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_9">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_8"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM10">
+         <item>
+          <widget class="QLabel" name="IMG_9">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_10">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_9"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_10">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_9"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM11">
+         <item>
+          <widget class="QLabel" name="IMG_10">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_11">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_10"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_11">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_10"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM12">
+         <item>
+          <widget class="QLabel" name="IMG_11">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_12">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_11"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_12">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_11"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="ITENS12_23">
+       <item>
+        <layout class="QHBoxLayout" name="ITEM01_2">
+         <item>
+          <widget class="QLabel" name="IMG_12">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_13">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_12"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_13">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_12"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM02_2">
+         <item>
+          <widget class="QLabel" name="IMG_13">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_14">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_13"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_14">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_13"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM03_2">
+         <item>
+          <widget class="QLabel" name="IMG_14">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_15">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_14"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_15">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_14"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM04_2">
+         <item>
+          <widget class="QLabel" name="IMG_15">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_16">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_15"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_16">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_15"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM05_2">
+         <item>
+          <widget class="QLabel" name="IMG_16">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_17">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_16"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_17">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_16"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM06_2">
+         <item>
+          <widget class="QLabel" name="IMG_17">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_18">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_17"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_18">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_17"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM07_2">
+         <item>
+          <widget class="QLabel" name="IMG_18">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_19">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_18"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_19">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_18"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM08_2">
+         <item>
+          <widget class="QLabel" name="IMG_19">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_20">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_19"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_20">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_19"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM09_2">
+         <item>
+          <widget class="QLabel" name="IMG_20">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_21">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_20"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_21">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_20"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM10_2">
+         <item>
+          <widget class="QLabel" name="IMG_21">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_22">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_21"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_22">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_21"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM11_2">
+         <item>
+          <widget class="QLabel" name="IMG_22">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_23">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_22"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_23">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_22"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ITEM12_2">
+         <item>
+          <widget class="QLabel" name="IMG_23">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MSELB_24">
+           <property name="text">
+            <string>MSE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="MSE_23"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="BRISQUELB_24">
+           <property name="text">
+            <string>BRISUE:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="BRSIQUE_23"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>781</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE_BRISQUE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE E BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
