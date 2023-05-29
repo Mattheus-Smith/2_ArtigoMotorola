@@ -26,7 +26,6 @@ def compare(imageA, imageB):
 
 def get_mse(lst_imgs):
     lst_resultado = []
-    lst_ordenada = []
 
     img0 = cv2.imread(lst_imgs[0])
     gray0 = cv2.cvtColor(img0, cv2.COLOR_BGR2GRAY)
@@ -48,10 +47,10 @@ def get_brisque(lst_imgs):
     named_tuplei = time.localtime()  # get struct_time
     time_stringi = time.strftime("%H:%M:%S", named_tuplei)
     ti = datetime.strptime(time_stringi, "%H:%M:%S")
-    print(time_stringi)
+    #print(time_stringi)
 
     for i in range(0, len(lst_imgs)):
-        print("execucao: ", i)
+        #print("execucao: ", i)
         img = cv2.imread(lst_imgs[i])
         score = brisque.score(img)
         lst_resultado.append(round(score, 4))
@@ -59,15 +58,15 @@ def get_brisque(lst_imgs):
     named_tuplef = time.localtime()  # get struct_time
     time_stringf = time.strftime("%H:%M:%S", named_tuplef)
     tf = datetime.strptime(time_stringf, "%H:%M:%S")
-    print(time_stringf)
+    #print(time_stringf)
 
     # get difference
-    delta = tf - ti
-    sec = delta.total_seconds()
-    min = sec / 60
-    hours = sec / (60 * 60)
-    tempo_total = hours+ ":"+ min + ":"+sec
-    print(tempo_total)
+    # delta = tf - ti
+    # sec = delta.total_seconds()
+    # min = sec / 60
+    # hours = sec / (60 * 60)
+    # tempo_total = hours+ ":"+ min + ":"+sec
+    # print(tempo_total)
 
     return lst_resultado
 

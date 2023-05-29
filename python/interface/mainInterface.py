@@ -29,6 +29,17 @@ class Ui_MainWindow(object):
             label[i].setText(str(fileName.split("/")[-1]))
             i+=1
 
+    def ordenar_imgs_brisque(self, lst_score_mse, lst_score_brsique):
+
+        for i in range(0, len(lst_score_mse)):
+            mse_atual = self.MSE[i]
+            print("mse_atual:  "+mse_atual)
+            for j in range(0, len(lst_score_mse)):
+                print("ordenando img e brisque: "+i+j)
+                if ( mse_atual == lst_score_mse[j] ):
+                    self.imgs.append(lst_score_mse[j])
+                    self.BRISQUE.append(lst_score_brsique[j])
+
     def button_search_mse(self):
 
         label = [self.IMG_00, self.IMG_01, self.IMG_02, self.IMG_03, self.IMG_04,self.IMG_05, self.IMG_06,
@@ -77,42 +88,42 @@ class Ui_MainWindow(object):
         lista_imgs, _ = QtWidgets.QFileDialog.getOpenFileNames(None, "Open Files", "",
                                                               "All Files (*);;Python Files(*.py)")
 
-        self.imgs =[]
-        self.BRISQUE = []
-        lista_score_mse, self.MSE = get_mse(lista_imgs)
+        lista_imgs_ordenada = []
+        lista_brisque_ordenada = []
+        lista_score_mse, lista_mse_ordenada = get_mse(lista_imgs)
         lista_score_brisque = get_brisque(lista_imgs)
 
         for i in range(0, len(lista_imgs)):
             for j in range(0, len(lista_imgs)):
-                if ( self.MSE[i] == lista_score_mse[j] ):
-                    self.imgs.append(lista_imgs[j])
-                    self.BRISQUE.append(lista_score_brisque[j])
+                if (lista_mse_ordenada[i] == lista_score_mse[j]):
+                    lista_imgs_ordenada.append(lista_imgs[j])
+                    lista_brisque_ordenada.append(lista_score_brisque[j])
 
+        self.change_label_imgs(label, lista_imgs_ordenada)
+        self.change_valor_mse(mse, lista_mse_ordenada)
+        self.change_valor_brisque(brisque, lista_brisque_ordenada)
 
-        self.change_label_imgs(label,self.imgs)
-        self.change_valor_mse(mse, self.MSE)
-        self.change_valor_brisque(brisque, self.BRISQUE)
+        self.MSE = lista_mse_ordenada.copy()
+        self.BRISQUE = lista_brisque_ordenada.copy()
+        self.IMG = lista_imgs_ordenada.copy()
+
 
     def gerar_relatorio_MSE_BRISQUE(self):
         # folder_path conterá o caminho da pasta selecionada
         folder_path = QtWidgets.QFileDialog.getExistingDirectory(None, "Select Folder")
+        caminho = folder_path.split("/")[-1]
 
-        # print(self.imgs)
-        # print(self.MSE)
-        # print(self.BRISQUE)
+        caminho = folder_path+"/relatorio_"+caminho+"_MSE_BRISQUE.txt"
 
-        # folder_path conterá o caminho do arquivo TXT
-        folder_path += "/relatorio_29_MSE_BRISQUE.txt"
-
-        print("Arquivo selecionada:", folder_path)
-
-        # try:
-        #     with open("relatorio_29_MSE_BRISQUE", 'w') as arquivo:
-        #         # Realize as operações de escrita no arquivo
-        #         arquivo.write("Conteúdo do arquivo de texto.")
-        #         arquivo.write("Nova linha de texto.")
-        # except Exception as e:
-        #     print("Ocorreu um erro ao criar o arquivo:", str(e))
+        try:
+            infile = open(caminho, 'w')
+            texto = "{:^130} | {:^10} | {:^10}\n".format("IMAGEM", "MSE", "BRISQUE")
+            infile.write(texto)
+            for i in range(0 , len(self.MSE)):
+                texto = "{:130} | {:10} | {:10}\n".format(self.IMG[i], self.MSE[i], self.BRISQUE[i])
+                infile.write(texto)
+        except Exception as e:
+            print("Ocorreu um erro ao criar o arquivo:", str(e))
 
     def setupUi(self, MainWindow):
         self.imgs = []
