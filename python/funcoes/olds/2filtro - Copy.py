@@ -20,54 +20,68 @@ flags.DEFINE_string('pc', "1", 'identifiy wich pc')
 
 def main(_args):
 
-    img = cv2.imread("./../caso38/38.jpg")
+    img = cv2.imread("./../caso32/32.jpg")
     i = 10
 
-    #remoção de ruido Gaussiano
+    # equalize CLAHE
     if (i == 1):
-        kernel = 3
-        desvio = 0
-        suavização = cv2.GaussianBlur(img, (kernel, kernel), desvio)
-        texto = "./../Gaussiano_({},{})_Desvio{}.png".format(kernel, kernel, desvio)
-        cv2.imwrite(texto, suavização)
-
-    # remoção de ruido Mediana
-    elif (i == 2):
-        kernel = 3
-        suavizacao = cv2.medianBlur(img, kernel)
-        texto = "./../mediana_{}.png".format(kernel)
-        cv2.imwrite(texto, suavizacao)
-
-        cv2.destroyAllWindows()
-
-    # ruido Gaussiano -> gamma -> CLAHE
-    elif (i == 3):
-        kernel = 3
-        desvio = 0
-        suavização = cv2.GaussianBlur(img, (kernel, kernel), desvio)
-
-        parametroGamma = 0.85
-        out_gamma = correcaoGamma(suavização, parametroGamma)
-
         parametroCLAHE = 2
-        CLAHE_matriz = 2
-        out_clahe = equalizeCLAHE(out_gamma, parametroCLAHE, CLAHE_matriz)
+        CLAHE_matriz = 8
+        output_CLAHE = equalizeCLAHE(img, parametroCLAHE, CLAHE_matriz)
 
-        texto = "./../Gaussiano_({}x{})_Desvio{}_gamma({})_CLAHE({}, {}).png".format(kernel,kernel, desvio, parametroGamma, parametroCLAHE, CLAHE_matriz)
+        texto = "./../output_CLAHE_"+str(parametroCLAHE)+"_("+str(CLAHE_matriz)+").png"
+        cv2.imwrite(texto, output_CLAHE)
 
-        cv2.imwrite(texto, out_clahe)
+    # equalize normal
+    elif (i == 2):
+        out_equalize = functionEqualization(img)
+
+        texto = "./../output_equalize.png"
+        cv2.imwrite(texto, out_equalize)
+
+    # funcion Linear
+    elif (i == 3):
+        a=1
+        # parametroA = 0.55
+        # parametroB = 25
+        # out = funcitonLinear(img, parametroA, parametroB)
+        #
+        # texto = "./../output_linear_("+str(parametroA)+","+str(parametroB)+").png"
+        # cv2.imwrite(texto, out)
+
+    # funcion Linear por Parte
+    elif (i == 4):
+        a=1
+        # parametroA = 0.55
+        # parametroB = 25
+        # out = funcitonLinear(img, parametroA, parametroB)
+        #
+        # texto = "./../output_linear_("+str(parametroA)+","+str(parametroB)+").png"
+        # cv2.imwrite(texto, out)
+
+    # funcion Quadrado
+    elif (i == 5):
+        parametroQuadrado = 0.075
+        out = funcionQuadrada(img, parametroQuadrado, 255)
+
+        texto = "./../output_quadrada_"+str(parametroQuadrado)+".png"
+        cv2.imwrite(texto, out)
+
+    # funcion Square
+    elif (i == 6):
+        parametroSquare = 0.004
+        out = funcionSquare(img, parametroSquare)
+
+        texto = "./../output_Square_"+str(parametroSquare)+".png"
+        cv2.imwrite(texto, out)
 
     # correcao de gamma
     elif (i == 7):
+        parametro = 0.7
+        out = correcaoGamma(img, parametro)
 
-        filtros = [0.5, 0.6, 0.7, 0.8, 0.9, 0.55, 0.65, 0.75, 0.85, 0.95]
-
-        for i in range(0, len(filtros)):
-            parametro = filtros[i]
-            out = correcaoGamma(img, parametro)
-
-            texto = "./../output_gamma_" + str(parametro) + ".png"
-            cv2.imwrite(texto, out)
+        texto = "./../output_gamma_"+str(parametro)+".png"
+        cv2.imwrite(texto, out)
 
     # gamma -> square
     elif (i == 8):
@@ -93,22 +107,15 @@ def main(_args):
 
     # gamma -> equalize CLAHE
     elif(i == 10):
+        parametroGamma = 0.75
+        out_gamma = correcaoGamma(img, parametroGamma)
 
-        lst_param_CLAHE = [1,2,3]
-        lst_CLAHE_matriz = [2,4,8]
+        parametroCLAHE = 6
+        CLAHE_matriz = 8
+        out_clahe = equalizeCLAHE(out_gamma, parametroCLAHE, CLAHE_matriz)
 
-        for i in range(0, len(lst_param_CLAHE)):
-            for j in range(0, len(lst_CLAHE_matriz)):
-                parametroGamma = 0.75
-                out_gamma = correcaoGamma(img, parametroGamma)
-
-                parametroCLAHE = lst_param_CLAHE[i]
-                CLAHE_matriz = lst_CLAHE_matriz[j]
-                out_clahe = equalizeCLAHE(out_gamma, parametroCLAHE, CLAHE_matriz)
-
-                texto = "./../output_gamma(" + str(parametroGamma) + ")_output_CLAHE_" + str(
-                    parametroCLAHE) + "_(" + str(CLAHE_matriz) + ").png"
-                cv2.imwrite(texto, out_clahe)
+        texto = "./../output_gamma("+str(parametroGamma)+")_output_CLAHE_"+str(parametroCLAHE)+"_("+str(CLAHE_matriz)+").png"
+        cv2.imwrite(texto, out_clahe)
 
     # gamma -> square -> equalize CLAHE
     elif(i == 11):
@@ -145,6 +152,10 @@ def main(_args):
         output = funcionHDR(img_list)
         texto = "./../output_HDR_gamma.png"
         cv2.imwrite(texto, output)
+
+    elif (i == 13):
+        a=1
+        #falta elaborar aq
 
 if __name__ == '__main__':
     try:

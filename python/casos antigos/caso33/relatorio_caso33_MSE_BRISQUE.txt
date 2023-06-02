@@ -1,0 +1,13 @@
+                                                              IMAGEM                                                               |    MSE     |  BRISQUE  
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_1_(8).png             |    19.7225 |    50.9692
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_1_(4).png             |    23.1993 |    51.1888
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_2_(8).png             |    27.6885 |    49.2955
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_1_(2).png             |    28.6875 |    54.9349
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_2_(4).png             |     33.618 |    48.3493
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_3_(8).png             |    34.7842 |    48.7538
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_2_(2).png             |    39.9689 |    54.3384
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_4_(8).png             |    40.7579 |    49.3406
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_3_(4).png             |    41.4663 |    48.1793
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_3_(2).png             |    47.3572 |    54.9162
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_4_(4).png             |    47.5457 |     49.241
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso33/output_gamma(0.85)_output_CLAHE_4_(2).png             |    53.4462 |    56.1994

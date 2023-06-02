@@ -1,0 +1,13 @@
+                                                              IMAGEM                                                               |    MSE     |  BRISQUE  
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_1_(8).png              |    39.9359 |     26.836
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_1_(4).png              |     42.032 |    27.2272
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_1_(2).png              |    43.1657 |    26.8161
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_2_(8).png              |    50.3827 |     29.663
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_2_(4).png              |     54.323 |    29.7767
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_2_(2).png              |    56.7559 |    29.2733
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_3_(8).png              |    59.8838 |     31.378
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_3_(4).png              |    65.3477 |     31.425
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso37/output_gamma(0.7)_output_CLAHE_3_(2).png              |    67.8343 |     30.891
+
+
+                                                   Media MSE: 53.29566666666666 | Media Brisque: 29.25403333333334                                                   

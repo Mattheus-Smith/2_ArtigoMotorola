@@ -10,6 +10,8 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from funcoes.MSE_BRISQUE import get_brisque, get_mse
+import os
+import cv2
 
 
 class Ui_MainWindow(object):
@@ -85,8 +87,11 @@ class Ui_MainWindow(object):
                self.BRISQUE_13, self.BRISQUE_14, self.BRISQUE_15, self.BRISQUE_16, self.BRISQUE_17, self.BRISQUE_18,
                self.BRISQUE_19, self.BRISQUE_20, self.BRISQUE_21, self.BRISQUE_22, self.BRISQUE_23]
 
-        lista_imgs, _ = QtWidgets.QFileDialog.getOpenFileNames(None, "Open Files", "",
-                                                              "All Files (*);;Python Files(*.py)")
+        # Configurar o filtro de arquivo para imagens
+        filtro_imagens = "Imagens (*.jpg *.png *.jpeg)"
+
+        # Obter a lista de arquivos de imagem
+        lista_imgs, _ = QtWidgets.QFileDialog.getOpenFileNames(None, "Open Files", "", filtro_imagens)
 
         lista_imgs_ordenada = []
         lista_brisque_ordenada = []
@@ -107,6 +112,34 @@ class Ui_MainWindow(object):
         self.BRISQUE = lista_brisque_ordenada.copy()
         self.IMG = lista_imgs_ordenada.copy()
 
+        self.MSE.pop(0)
+        self.BRISQUE.pop(0)
+        self.IMG.pop(0)
+
+        media_mse = sum(self.MSE) / len(self.MSE)
+        media_brisque = sum(self.BRISQUE)/len(self.BRISQUE)
+
+        texto = "Media da MSE: {} | Media do BRISQUE: {}\n".format(media_mse, media_brisque)
+        print(texto)
+
+    def choice_better_imgs(self, caminho):
+        nome_diretorio = caminho+"/better_imgs"
+
+        if not os.path.exists(nome_diretorio):  # Verificar se o diretório já existe
+            os.makedirs(nome_diretorio)         # Cria o diretório
+            print("Diretório criado com sucesso!")
+        else:
+            print("O diretório já existe.")
+
+        for i in range(0,5):
+            # print(self.IMG[i])
+            img = cv2.imread(self.IMG[i])
+            img_texto = self.IMG[i].split("/")[-1]
+            print(img_texto)
+            texto = nome_diretorio+"/"+img_texto
+            #texto = f"{nome_diretorio}/img_0{i}.png"  # Adicione a extensão .jpg
+            cv2.imwrite(texto, img)
+        print("Melhores imagens selecionadas!!")
 
     def gerar_relatorio_MSE_BRISQUE(self):
         # folder_path conterá o caminho da pasta selecionada
@@ -122,8 +155,18 @@ class Ui_MainWindow(object):
             for i in range(0 , len(self.MSE)):
                 texto = "{:130} | {:10} | {:10}\n".format(self.IMG[i], self.MSE[i], self.BRISQUE[i])
                 infile.write(texto)
+
+            media_mse = sum(self.MSE) / len(self.MSE)
+            media_brisque = sum(self.BRISQUE) / len(self.BRISQUE)
+            texto = "\n\n{:50} Media MSE: {} | Media Brisque: {} {:50}\n".format(" ",media_mse, media_brisque, " ")
+            infile.write(texto)
+
+            print("Relatorio gerado!!")
+            infile.close()
         except Exception as e:
             print("Ocorreu um erro ao criar o arquivo:", str(e))
+
+        self.choice_better_imgs(folder_path)
 
     def setupUi(self, MainWindow):
         self.imgs = []

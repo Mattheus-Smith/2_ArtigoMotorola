@@ -1,5 +1,0 @@
-                                                              IMAGEM                                                               |    MSE     |  BRISQUE  
-C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso29/2015_04995.jpg                                        |          0 |      8.748
-C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso29/output_gamma(0.7)_output_CLAHE_2_(12).png             |    43.7251 |     9.1389
-C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso29/output_gamma(0.7)_output_CLAHE_2_(8).png              |    44.9887 |     8.9267
-C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso29/output_gamma(0.7)_output_CLAHE_2_(4).png              |    47.1493 |     9.0406

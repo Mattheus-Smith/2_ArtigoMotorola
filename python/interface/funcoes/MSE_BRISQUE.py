@@ -50,7 +50,7 @@ def get_brisque(lst_imgs):
     #print(time_stringi)
 
     for i in range(0, len(lst_imgs)):
-        #print("execucao: ", i)
+        print("execucao: ", i)
         img = cv2.imread(lst_imgs[i])
         score = brisque.score(img)
         lst_resultado.append(round(score, 4))
