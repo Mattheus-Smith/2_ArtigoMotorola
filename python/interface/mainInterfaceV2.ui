@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>981</width>
+      <height>257</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="img_0">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_0">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_0">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_0">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_0">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="img_1">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_1">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_1">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_1">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_1">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="img_2">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_2">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_2">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_2">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_2">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="img_3">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_3">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_3">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_3">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_3">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="img_4">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_4">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_4">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_10">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_4">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_4">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="img_5">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_5">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_5">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_5">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_5">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="img_6">
+         <property name="text">
+          <string>IMG01.JPG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_mse_6">
+         <property name="text">
+          <string>MSE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MSE_6">
+         <property name="text">
+          <string>35.6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_14">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_BRISQUE_6">
+         <property name="text">
+          <string>BRISQUE: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BRISQUE_6">
+         <property name="text">
+          <string>41.5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>620</y>
+      <width>981</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="FOOTER">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RELATORIO_MSE_BRISQUE">
+       <property name="text">
+        <string>GERAR RELATORIO MSE E BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>981</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="topper">
+     <property name="spacing">
+      <number>50</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mse">
+       <property name="text">
+        <string>Imagens p/ MSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mseBrisque">
+       <property name="text">
+        <string>Imagens p/ MSE e BRISQUE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

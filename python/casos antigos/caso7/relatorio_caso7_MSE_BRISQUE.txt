@@ -1,0 +1,19 @@
+                                                              IMAGEM                                                               |    MSE     |  BRISQUE  
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.85_square_0.0031.png                       |    16.6387 |    34.0552
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.9_square_0.0031.png                        |    16.6595 |    33.8383
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.95_square_0.0031.png                       |     16.984 |    33.5458
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.8_square_0.0031.png                        |    17.0395 |    34.7646
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_1.2_square_0.0031.png                        |    22.0171 |    33.3471
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_1.4_square_0.0031.png                        |    27.2666 |    33.7915
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_1.8_square_0.0031.png                        |      37.31 |    34.2827
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_2_square_0.0031.png                          |    41.7232 |     34.772
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_2.2_square_0.0031.png                        |    46.1588 |    35.0909
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_2.6_square_0.0031.png                        |    53.8331 |    36.1412
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_3.5_square_0.0031.png                        |    67.4006 |    38.3048
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.8_square_0.0033.png                        |    77.2889 |    38.9073
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.85_square_0.0033.png                       |    78.6454 |    38.7916
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.9_square_0.0033.png                        |    79.9723 |    38.8628
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso7/mse/gamma_0.95_square_0.0033.png                       |    81.3372 |    38.7002
+
+
+                                                   Media MSE: 45.35166000000001 | Media Brisque: 35.81306666666667                                                   

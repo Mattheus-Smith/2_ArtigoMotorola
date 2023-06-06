@@ -1,0 +1,2 @@
+caso 8 -verificar saturação
+caso 7 e 9 - tentar aplicar gamma por area

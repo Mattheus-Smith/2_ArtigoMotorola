@@ -1,0 +1,18 @@
+                                                              IMAGEM                                                               |    MSE     |  BRISQUE  
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_0.8_square_0.003.png                         |    12.2477 |    28.8322
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_0.85_square_0.003.png                        |    12.5637 |    28.4862
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_0.9_square_0.003.png                         |    13.4487 |    28.1476
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_0.95_square_0.003.png                        |    14.6346 |    27.8219
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_1.1_square_0.003.png                         |    19.1231 |    28.0469
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_1.2_square_0.003.png                         |    22.3486 |    28.1954
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_1.4_square_0.003.png                         |    28.6943 |    28.2483
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/output_HDR_gamma.png                               |    31.5477 |    27.1368
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_1.6_square_0.003.png                         |    34.6761 |     28.844
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_1.8_square_0.003.png                         |    40.1583 |     29.871
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_2_square_0.003.png                           |    45.1423 |    31.4997
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_2.2_square_0.003.png                         |    49.8528 |    33.6313
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_2.4_square_0.003.png                         |    54.1674 |    35.5824
+C:/Users/Smith Fernandes/Documents/4 - github/2_ArtigoMotorola/python/caso9/HDR/gamma_2.6_square_0.003.png                         |    58.1991 |    37.1653
+
+
+                                                   Media MSE: 31.20031428571428 | Media Brisque: 30.107785714285715                                                   
